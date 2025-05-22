@@ -69,7 +69,9 @@ window.onload = function() {
             getSourceColor: d => linePartColor(d, [217, 191, 13], [255, 0, 0]),
             getTargetColor: d => linePartColor(d, [30, 133, 83], [255, 0, 0]),
             getWidth: 1,
-            pickable: true
+            pickable: true,
+            autoHighlight: true,
+            highlightColor: [77, 208, 225]
           });
           abandonmentOverlay.setProps({
             layers: [filteredLayer]
