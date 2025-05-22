@@ -1,0 +1,60 @@
+<html>
+<head>
+  <title>Multi-Scalar Abandonment</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css" />
+  
+  
+  
+</head>
+<body>
+  <div class="title">
+    <h1>Multi-Scalar Abandonment (2015)</h1>
+    <p>Connections between property owners (green) and their vacant properties (yellow)<br>Red lines denote a connection to a property on the VPRC list</p>
+  </div>
+  <div id='map'></div>
+  <div id="filter-container">
+    <fieldset>
+      <legend>Filter abandonment flows</legend>
+      <div>
+        <input type="radio" id="all" name="filter" value="all" checked />
+        <label for="all">All <span class="badge">795</span></label>
+      </div>
+      <div>
+        <input type="radio" id="finnell" name="filter" value="finnell" />
+        <label for="finnell">Finnell Properties <span class="badge">17</span></label>
+      </div>
+      <div>
+        <b>Top-5 Property Owners</b>
+      </div>
+      <div>
+        <input type="radio" id="morton" name="filter" value="morton" />
+        <label for="morton">Morton Properties <span class="badge">165</span></label>
+      </div>
+      <div>
+        <input type="radio" id="omead" name="filter" value="omead" />
+        <label for="omead">Omead Properties <span class="badge">52</span></label>
+      </div>
+      <div>
+        <input type="radio" id="johnson" name="filter" value="johnson" />
+        <label for="johnson">Joe Johnson Properties <span class="badge">46</span></label>
+      </div>
+      <div>
+        <input type="radio" id="approp" name="filter" value="approp" />
+        <label for="approp">A &amp; P Realty Properties <span class="badge">42</span></label>
+      </div>
+      <div>
+        <input type="radio" id="lowkey" name="filter" value="lowkey" />
+        <label for="lowkey">Low Key Properties <span class="badge">40</span></label>
+      </div>
+    </fieldset>
+  </div>
+  
+  <script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
+  <!-- optional if maplibre base map is needed -->
+  <script src="https://unpkg.com/maplibre-gl@3.0.0/dist/maplibre-gl.js"></script>
+  <link href="https://unpkg.com/maplibre-gl@3.0.0/dist/maplibre-gl.css" rel="stylesheet" />
+<script src='app.js' defer></script>
+</body>
+</html>
